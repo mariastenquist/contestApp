@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="contestApp">
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.min.js"></script>
+</head>
+
+
+<body ng-controller="contestController">
+
+<h3>{{greeting}}</h3>
+<!-- <p>{{allsubmissions}}</p> -->
+<!-- <p>{{postSubmissions}}</p> -->
+<!-- {{contestArray}} -->
+<form ng-submit="submitNewEntry()">
+	<input ng-model="newEntry.name" placeholder="name">
+	<input ng-model="newEntry.title" placeholder="title">
+	<input ng-model="newEntry.url" src="" placeholder="url">
+	<input ng-model="newEntry.description" placeholder="description">
+	<input type="submit" >
+</form>
+<!-- 
+<div ng-repeat="sub in allsubmissions">
+
+
+	<h3>{{sub.name}}</h3>
+	<h3>{{sub.title}}</h3>
+	<h3><iframe width="560" height="315" src="//www.youtube.com/embed/v2ifWcnQs6M?list=PL5586336C26BDB324" frameborder="0" allowfullscreen></iframe></h3>
+	<h3>{{sub.description}}</h3>
+	
+</div>
+ -->
+
+
+
+<script src="/js/home.js" type="text/javascript"></script>
+
+</body>
+</html>
